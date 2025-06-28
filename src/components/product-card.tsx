@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2472FC] to-[#8711C1] rounded-xl opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
       
       <div className="relative bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-full border-2 border-gray-200 group-hover:border-transparent overflow-hidden">
-        <div className="relative h-[160px] sm:h-[200px] md:h-[220px] w-full overflow-hidden flex-shrink-0">
+        <div className="relative aspect-square w-full overflow-hidden flex-shrink-0">
           <Image
             src={product.image}
             alt={product.name}

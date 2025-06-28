@@ -12,7 +12,7 @@ export const products: Product[] = [
     id: 1,
     name: "Wireless Bluetooth Headphones",
     price: 79.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%234F46E5'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🎧 Headphones%3C/text%3E%3C/svg%3E",
+    image: "/products/Wireless Bluetooth Headphones.jpg",
     description: "High-quality wireless headphones with noise cancellation and 30-hour battery life.",
     category: "Electronics"
   },
@@ -20,7 +20,7 @@ export const products: Product[] = [
     id: 2,
     name: "Organic Cotton T-Shirt",
     price: 24.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%2310B981'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E👕 T-Shirt%3C/text%3E%3C/svg%3E",
+    image: "/products/Organic Cotton T-Shirt.png",
     description: "Soft, comfortable organic cotton t-shirt available in multiple colors.",
     category: "Clothing"
   },
@@ -28,7 +28,7 @@ export const products: Product[] = [
     id: 3,
     name: "Stainless Steel Water Bottle",
     price: 34.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%2306B6D4'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🍼 Bottle%3C/text%3E%3C/svg%3E",
+    image: "/products/Stainless Steel Water Bottle.jpg",
     description: "Insulated stainless steel water bottle that keeps drinks cold for 24 hours.",
     category: "Accessories"
   },
@@ -36,7 +36,7 @@ export const products: Product[] = [
     id: 4,
     name: "Mechanical Gaming Keyboard",
     price: 129.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%23EF4444'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E⌨️ Keyboard%3C/text%3E%3C/svg%3E",
+    image: "/products/Mechanical Gaming Keyboard.jpg",
     description: "RGB mechanical keyboard with tactile switches, perfect for gaming and typing.",
     category: "Electronics"
   },
@@ -44,7 +44,7 @@ export const products: Product[] = [
     id: 5,
     name: "Leather Messenger Bag",
     price: 89.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%23A855F7'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E👜 Bag%3C/text%3E%3C/svg%3E",
+    image: "/products/Leather Messenger Bag.jpg",
     description: "Handcrafted leather messenger bag with multiple compartments for work essentials.",
     category: "Accessories"
   },
@@ -52,7 +52,7 @@ export const products: Product[] = [
     id: 6,
     name: "Smart Fitness Watch",
     price: 199.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%23F59E0B'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E⌚ Watch%3C/text%3E%3C/svg%3E",
+    image: "/products/Smart Fitness Watch.png",
     description: "Advanced fitness tracker with heart rate monitoring, GPS, and smartphone connectivity.",
     category: "Electronics"
   },
@@ -60,7 +60,7 @@ export const products: Product[] = [
     id: 7,
     name: "Ceramic Coffee Mug Set",
     price: 39.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%23DC2626'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E☕ Mugs%3C/text%3E%3C/svg%3E",
+    image: "/products/Ceramic Coffee Mug Set.png",
     description: "Set of 4 handmade ceramic coffee mugs with unique glazed finish.",
     category: "Home & Kitchen"
   },
@@ -68,7 +68,7 @@ export const products: Product[] = [
     id: 8,
     name: "Wireless Phone Charger",
     price: 49.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%2384CC16'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🔌 Charger%3C/text%3E%3C/svg%3E",
+    image: "/products/Wireless Phone Charger.png",
     description: "Fast wireless charging pad compatible with all Qi-enabled devices.",
     category: "Electronics"
   },
@@ -76,7 +76,7 @@ export const products: Product[] = [
     id: 9,
     name: "Yoga Mat",
     price: 54.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%23EC4899'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🧘 Yoga Mat%3C/text%3E%3C/svg%3E",
+    image: "/products/Yoga Mat.png",
     description: "Premium non-slip yoga mat made from eco-friendly materials.",
     category: "Sports & Fitness"
   },
@@ -84,7 +84,7 @@ export const products: Product[] = [
     id: 10,
     name: "Desk Plant - Succulent",
     price: 19.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%2365A30D'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🌱 Plant%3C/text%3E%3C/svg%3E",
+    image: "/products/Desk Plant - Succulent.png",
     description: "Low-maintenance succulent plant perfect for office or home decoration.",
     category: "Home & Garden"
   },
@@ -92,7 +92,7 @@ export const products: Product[] = [
     id: 11,
     name: "Bluetooth Speaker",
     price: 69.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%2314B8A6'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🔊 Speaker%3C/text%3E%3C/svg%3E",
+    image: "/products/Bluetooth Speaker.png",
     description: "Portable waterproof Bluetooth speaker with 360-degree sound and 12-hour battery.",
     category: "Electronics"
   },
@@ -100,7 +100,7 @@ export const products: Product[] = [
     id: 12,
     name: "Canvas Backpack",
     price: 64.99,
-    image: "data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='400' height='400' fill='%236366F1'/%3E%3Ctext x='200' y='200' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dy='0.3em'%3E🎒 Backpack%3C/text%3E%3C/svg%3E",
+    image: "/products/Canvas Backpack.png",
     description: "Durable canvas backpack with laptop compartment and multiple pockets.",
     category: "Accessories"
   }
