@@ -22,8 +22,8 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-          <div className="flex items-center space-x-2 text-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-x-2 text-sm py-4">
             <Link href="/" className="text-gray-500 hover:text-gray-700">
               Home
             </Link>
@@ -33,7 +33,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
             </Link>
             <span className="text-gray-400">/</span>
             <span className="text-gray-900 font-medium">{product.name}</span>
-          </div>a
+          </div>
         </div>
       </motion.div>
 
@@ -44,12 +44,12 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="relative h-96 lg:h-full min-h-[400px]">
+            <div className="relative h-96 sm:h-[500px] md:h-[600px] lg:h-full lg:min-h-[500px]">
               <Image
                 src={product.image}
                 alt={product.name}
                 fill
-                className="object-cover"
+                className="object-cover cursor-pointer transition-opacity duration-200"
                 priority
               />
             </div>
