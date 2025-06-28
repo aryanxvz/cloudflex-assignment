@@ -1,39 +1,15 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShoppingCart, Plus } from 'lucide-react';
 import { Product } from '@/lib/data';
-import { toast } from 'react-hot-toast';
 
 interface ProductCardProps {
   product: Product;
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    toast.success(`${product.name} added to cart!`, {
-      duration: 3000,
-      position: 'bottom-right',
-      style: {
-        background: '#10B981',
-        color: 'white',
-        fontWeight: '500',
-        borderRadius: '8px',
-        padding: '12px 16px',
-      },
-      iconTheme: {
-        primary: 'white',
-        secondary: '#10B981',
-      },
-    });
-  };
-
   return (
-    <Link href={`/products/${product.id}`} className="relative group cursor-pointer block h-full">
-
+    <div className="relative group h-full">
       <div className="absolute -inset-0.5 bg-gradient-to-r from-[#2472FC] to-[#8711C1] rounded-xl opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
       
       <div className="relative bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col h-full border-2 border-gray-200 group-hover:border-transparent overflow-hidden">
@@ -63,20 +39,16 @@ export default function ProductCard({ product }: ProductCardProps) {
                 ${product.price.toFixed(2)}
               </span>
               
-              <button
-                onClick={handleAddToCart}
-                className="relative bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-2 rounded-full hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 group/cart">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full opacity-0 group-hover/cart:opacity-20 transition-opacity duration-300"></div>
-                <div className="relative flex items-center justify-center">
-                  <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200" />
-                  <Plus className="w-2.5 h-2.5 sm:w-3 sm:h-3 absolute -top-0.5 -right-0.5 bg-white text-emerald-600 rounded-full transition-all duration-200 group-hover/cart:scale-110" />
-                </div>
-              </button>
+              <Link 
+                href={`/products/${product.id}`}
+                className="text-blue-600 hover:text-blue-800 text-sm underline transition-colors duration-200"
+              >
+                View Details
+              </Link>
             </div>
           </div>
-
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
